@@ -18,8 +18,8 @@ body {
 /* Basic styling */
 
 .jumbotron {
-  background-image:
-	url('https://raw.githubusercontent.com/emmaraymaker/The-Hollow-Men/master/images/ww1.png'); 
+  /* background-image: */
+/*	url('https://raw.githubusercontent.com/emmaraymaker/The-Hollow-Men/master/images/ww1.png'); */
   height: 100%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
