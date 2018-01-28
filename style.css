@@ -1,74 +1,207 @@
-/* Initial body */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 body {
-  left: 0;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
 }
 
-/* Initial menu */
-.menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
-  left: -285px;  /* start off behind the scenes */
-  height: 100%;
-  position: fixed;
-  width: 285px;
+#navigation {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    z-index: 4;
 }
 
-/* Basic styling */
-
-.jumbotron {
-	background: #000;
-  /* background-image: */
-/*	url('https://raw.githubusercontent.com/emmaraymaker/The-Hollow-Men/master/images/ww1.png'); */
-  height: 100%;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    z-index: 4;
 }
 
-.menu ul {
-  border-top: 1px solid #636366;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav_button {
+    display: block;
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    height: 75%;
+    width: 5%;
+    background-color: rgb(55, 172, 55);
+    z-index: 4;
 }
 
-.menu li {
-  border-bottom: 1px solid #636366;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
+#tableOfContents {
+    position: absolute;
+    height: 100%;
+    width: 26%;
+    right:-26%;
+    bottom:0;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 25px;
+    color: rgb(51, 51, 51);
 }
 
-.menu a {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
+#tab1 {
+    position: relative;
+    left: 150%;
+    top: 0%;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
 }
 
-.icon-close {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
+#tab2 {
+    position: relative;
+    left: 150%;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
 }
 
-.icon-menu {
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
+#tab3 {
+    position: relative;
+    left: 150%;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
 }
 
-.icon-menu i {
-  margin-right: 5px;
+#jumbotron {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.container1, {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.text1, .text1_1 {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* not part of solution */
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 85px;
+    color: white;
+    opacity: 0;
+}
+
+.container1-body {
+    position: absolute;
+    height: 75%;
+    width: 90%;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    z-index: 3;
+}
+
+.text2 {
+    position: relative;
+	top: 90%;
+    left: 50%;
+    height: 20%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* not part of solution */
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 85px;
+    color: white;
+    opacity: 0;
+    z-index: 5;
+}
+
+.text2_1 {
+    position: relative;
+	top: 90%;
+    left: 50%;
+    height: 4%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* not part of solution */
+    font-family: Roboto;
+    font-weight: 150;
+    font-size: 18px;
+    color: white;
+    opacity: 0;
+}
+
+.arrow-holder-1,.arrow-holder-2 {
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+	top: 90%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* not part of solution */
+    color: white;
+    opacity:0;
+    z-index: 1;
+}
+
+.arrow-icon-1, .arrow-icon-2 {
+    display: block;
+    position: absolute;
+    height: 14.82px;
+    width: 32px;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity:0;
+    z-index: 5;
+    margin: 8px;
+    margin-top: 8px
+}
+
+.container2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.container2_mainText {
+    position: absolute;
+	top: 50%;
+	left: 5%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* not part of solution */
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 75px;
+    color: white;
+    opacity: 0;
 }
